@@ -11,6 +11,8 @@ set ruler
 " Enter the Pilcrow mark ¶ by pressing Ctrl+k then PI
 set list listchars=tab:»·,trail:·
 
+" force 256 colors on the terminal
+set t_Co=256
 " Syntax Highlighting
 set background=dark
 syntax enable
@@ -24,3 +26,6 @@ set shiftwidth=4
 set softtabstop=4
 " When expandtab is set, vim will always use spaces
 set expandtab
+" highlight current line
+set cursorline
+hi CursorLine cterm=NONE ctermbg=236 ctermfg=NONE
